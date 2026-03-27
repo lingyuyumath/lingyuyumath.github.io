@@ -24,4 +24,27 @@
 {{ content }}
 
 </body>
+
+
+<div class="images-container">
+  <img src="images/knot1.png" alt="Knot 1">
+  <img src="images/knot2.png" alt="Knot 2">
+</div>
+
+<style>
+  .images-container {
+    display: flex;
+    flex-direction: column; /* 竖直排列 */
+    align-items: center;    /* 居中显示 */
+    gap: 20px;              /* 图片间距 */
+    margin-top: 20px;       /* 和上方内容保持间距 */
+  }
+
+  .images-container img {
+    width: 400px;           /* 可根据需要调整图片大小 */
+  }
+</style>
+  
+
+
 </html>
