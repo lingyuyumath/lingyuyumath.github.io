@@ -5,7 +5,7 @@ title: Home
 
 ## About Me
 
-I am Lingyu Yu,and currently I am an undergraduate student in mathematics with interests in Low-dimensional Topology  
+I am Lingyu Yu, and currently I am an undergraduate student in mathematics with interests in Low-dimensional Topology  
 
 ## Research Interests
 
