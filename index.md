@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Home
-home:true
+home: true
 ---
 ## About Me
 
