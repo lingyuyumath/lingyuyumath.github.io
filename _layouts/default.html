@@ -42,13 +42,28 @@
 
 {{ content }}
 
-<!-- 只在 Home 页面显示右侧图片 -->
+<!-- 只在 Home 页面显示图片 -->
 {% if page.home %}
 <div class="images-container">
   <img src="/images/IMG_0045.jpeg" alt="Knots">
   <img src="/images/IMG_0046.jpeg" alt="Hopf fibration">
 </div>
 {% endif %}
+
+<style>
+.images-container {
+  display: flex;
+  flex-direction: column; /* 竖直排列 */
+  align-items: center;    /* 居中 */
+  gap: 20px;              /* 图片间距 */
+  margin-bottom: 30px;    /* 和正文间距 */
+}
+
+.images-container img {
+  width: 400px;           /* 可根据需要调整大小 */
+  display: block;
+}
+</style>
 
 </body>
 </html>
