@@ -16,8 +16,9 @@ My current interests include:
 
 
 ## Address
-    School of Mathematical Sciences, Tongji University
+
+School of Mathematical Sciences, Tongji University
     
-    Siping Road 1239, 200092 Shanghai, China
+Siping Road 1239, 200092 Shanghai, China
     
-    Email: <a href="mailto:lingyumath0203@tongji.edu.cn">lingyumath0203@tongji.edu.cn
+Email: lingyumath0203@tongji.edu.cn
