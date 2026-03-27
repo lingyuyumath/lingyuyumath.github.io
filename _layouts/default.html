@@ -6,6 +6,25 @@
   <title>{{ page.title }}</title>
 
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- 可选：你可以在这里加全局 CSS -->
+  <style>
+    /* 图片容器右侧固定 */
+    .images-container {
+      position: fixed;        /* 固定在屏幕上 */
+      top: 100px;             /* 离顶部距离，可调整 */
+      right: 20px;            /* 离右侧距离 */
+      display: flex;
+      flex-direction: column; /* 竖直排列 */
+      gap: 20px;              /* 图片间距 */
+      max-width: 200px;       /* 控制图片最大宽度 */
+    }
+
+    .images-container img {
+      width: 100%;            /* 填满容器宽度 */
+      display: block;
+    }
+  </style>
 </head>
 
 <body>
@@ -23,25 +42,13 @@
 
 {{ content }}
 
-<!-- 图片容器放在 body 内 -->
+<!-- 只在 Home 页面显示右侧图片 -->
+{% if page.home %}
 <div class="images-container">
-  <img src="images/IMG_0045.jpeg" alt="Knots">
-  <img src="images/IMG_0046.jpeg" alt="Hopf fibration">
+  <img src="/images/knot1.png" alt="Knot 1">
+  <img src="/images/knot2.png" alt="Knot 2">
 </div>
-
-<style>
-  .images-container {
-    display: flex;
-    flex-direction: column; /* 竖直排列 */
-    align-items: center;    /* 居中显示 */
-    gap: 20px;              /* 图片间距 */
-    margin-top: 20px;       /* 和上方内容保持间距 */
-  }
-
-  .images-container img {
-    width: 400px;           /* 可根据需要调整图片大小 */
-  }
-</style>
+{% endif %}
 
 </body>
 </html>
